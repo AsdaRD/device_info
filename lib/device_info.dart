@@ -32,12 +32,12 @@ class DeviceInfo {
     }
   }
 
-  static Future<String> getApi() async {
+  static Future<int> getApi() async {
     try {
-      final String result = await _channel.invokeMethod('getApi');
+      final int result = await _channel.invokeMethod('getApi');
       return result;
     } on PlatformException {
-      return '';
+      return 0;
     }
   }
 

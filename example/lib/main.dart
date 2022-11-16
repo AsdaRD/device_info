@@ -17,7 +17,6 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String _deviceInfo = 'Unknown';
-
   @override
   void initState() {
     super.initState();
