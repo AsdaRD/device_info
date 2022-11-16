@@ -1,6 +1,6 @@
 # device_info
 
-Flutter plugin providing device information (Device name, model, OS, OS API(for Android), RAM, Screen Resolution). 
+Flutter plugin providing device information (Device name, model, OS, OS API(for Android), RAM, screen resolution). 
 
 ## Platforms: Android, IOS.
 
