@@ -1,17 +1,22 @@
-Device_info
-Flutter plugin providing device information (Device name, model, OS, OS API(for Android), RAM, Screen Resolution). 
-Platforms: Android, IOS.
+# device_info
 
-Installing: 
+Flutter plugin providing device information (Device name, model, OS, OS API(for Android), RAM, Screen Resolution). 
+
+## Platforms: Android, IOS.
+
+## Installing: 
 Add dependence to `pubspeck.yaml`
 ```dart
 dependencies:
-  device_info_plus: ^8.0.0
+  device_info:
+    git: 
+      url: https://github.com/AsdaRD/device_info
+      ref: master
 ```
 
-Import `package:device_info/device_info.dart`, instantiate DeviceInfo and use the Android and iOS getters to get platform-specific device information.
+Import `package:device_info/device_info.dart`, use the class DeviceInfo to access the static Android and iOS getters to get platform-specific device information.
 
-Example:
+## Example:
 ```dart
 import 'package:device_info/device_info.dart';
 String deviceInfo = await DeviceInfo.getDeviceInfo();
@@ -28,12 +33,4 @@ String deviceRam = await DeviceInfo.getRam();
 print(deviceRam);  // e.g. 8 (int)
 String deviceScreenResolution = await DeviceInfo.getScreenResolution();
 print(deviceScreenResolution);  // e.g. "2723 x 1440"
-
- 
-
-
-
-
-
-
 ```
